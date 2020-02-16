@@ -66,3 +66,5 @@ for (let i = 0; i < linkNav.length; i++) {
         }
     }, false);
 }
+
+$('#video').attr('playsinline',''); 
