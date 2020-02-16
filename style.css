@@ -1,0 +1,275 @@
+html, body {
+	margin: 0;
+	overflow-x: hidden;
+}
+.video-bg {
+    overflow: hidden;
+    position: relative;
+    height: 25vw;
+    width: 100%;
+    padding-top:45%;
+}
+ 
+.video-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+    object-fit: cover;
+}
+.overlay-video {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.overlay-video h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 5vw;
+	font-family: Veranda, sans-serif;
+    margin-top:17%;
+}
+.go-down {
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%);
+	bottom: 4%;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2.7vw;
+	font-family: Veranda, sans-serif;
+	cursor: pointer;
+	z-index: 10;
+	border: 4px solid MediumSpringGreen;
+	padding: 3px;
+}
+
+
+.timer {
+	display:block;
+	position:fixed;
+	left:0;
+	top: 0;
+	width:100%;
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: Gainsboro;
+	padding: 10px;
+	background-color: rgba(0,0,0,.3);
+	z-index: 5;
+	transition: all ease 1s;
+	text-align: center;
+	font-size: 1.9vw;
+	font-family: Veranda, sans-serif;
+}
+
+#time {
+	font-size: 2.6vw;
+}
+
+.slider-wrap {
+	border: 1px silver;
+	width: 100%;
+	height: 70vw;
+	margin: 0px auto;
+	position: relative;
+}
+
+.slider {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+.slider img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	margin: 0 auto;
+	opacity: 1;
+	transition: all ease 1s;
+}
+
+.slider .block-text {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;/**/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #fff;
+	padding: 5%;
+	background-color: rgba(0,0,0,.2);
+	z-index: 5;
+	transition: all ease 1s;
+	text-align: center;
+}
+
+.slider .text-slide{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 4vw;
+	font-family: Arial Black;
+	padding: 10px;
+	background-color: rgba(0,0,0,.3);
+	z-index: 5;
+	text-align: center;
+}
+
+.slider span {
+	font-size: 3vw;
+	font-family: Veranda, sans-serif;
+	z-index: 5;
+}
+
+.slider .opacity0{
+	opacity: 0;
+}
+
+.properties {
+	background: #3a364a;
+	width: 100%;
+	height: 100%;
+	padding: 7px;
+	overflow: hidden;
+	font-size: 3vw;
+	font-family: Veranda, sans-serif;
+	color: white;
+}
+
+.properties p {
+	text-align: center;
+}
+
+.form-box {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 60px 50px;
+  margin: 0;/*50px auto 0*/
+  background-size: cover;
+  background: #56818f;
+  overflow: hidden;
+}
+
+.form-inner {
+  position: relative;
+  overflow: hidden;
+  left: 35%;
+}
+.form-inner h3 {
+  position: relative;
+  margin-top: 0;
+  color: white;
+  font-family: Veranda, sans-serif;
+  font-weight: 300;
+  font-size: 2.7vw;
+  text-transform: uppercase;
+}
+
+.form-inner label {
+  display: block;
+  padding-left: 15px;
+  font-family: Veranda, sans-serif;
+  color: rgba(255,255,255,.6);
+  text-transform: uppercase;
+  font-size: 1.3vw;
+}
+.form-inner input {
+  box-sizing: border-box;
+  display: block;
+  width: 25%;
+  padding: 0 15px;
+  margin: 10px 0 15px;
+  border-width: 0;
+  line-height: 2.7vw;
+  border-radius: 20px;
+  color: white;
+  background: rgba(255,255,255,.2);
+  font-family: Veranda, sans-serif;
+}
+
+.form-inner input[type="submit"] {
+  background: #a5bbc2;
+  font-size: 1.3vw;
+}
+
+@media screen and (max-width: 767px){     
+	.slider-wrap, .slider img {
+	width: 100%;
+	height: 100vw;
+}
+
+.slider-wrap {
+	position: sticky;
+}
+
+.slider {
+	width: 100%;
+	height: 100%;
+}
+
+.video-bg {
+    height: 100vw;
+}
+
+.overlay-video h1 {
+    font-size: 10vw;
+}
+
+.go-down {
+    font-size: 8vw;
+}
+
+.timer, .slider span, .properties {
+	font-size: 5.5vw;
+}
+
+#time {
+	font-size: 6vw;
+}
+
+.form-inner {
+	left:0;
+}
+
+.form-inner h3 {
+    font-size: 5.7vw;
+}
+
+.form-inner label {
+  font-size: 3.3vw;
+}
+
+.form-inner input {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    line-height: 8vw;
+}
+
+.form-inner input[type="submit"] {
+  font-size: 4vw;
+}
+}
